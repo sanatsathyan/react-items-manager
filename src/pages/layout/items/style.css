@@ -1,0 +1,28 @@
+.sort-asc {
+  left: 3px;
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border: solid 5px transparent;
+  margin: 4px 4px 2px 3px;
+  background: transparent;
+  border-bottom: solid 7px #333;
+  border-top-width: 0;
+}
+
+.sort-desc {
+  left: 3px;
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border: solid 5px transparent;
+  margin: 4px 4px 2px 3px;
+  background: transparent;
+  border-top: solid 7px #333;
+  border-bottom-width: 0;
+}
+
+.item-card-container {
+  max-height: 420px;
+  overflow-y: auto;
+}
