@@ -61,9 +61,12 @@ const getFilteredItems = (state, userId) => {
     .filter(
       (r) =>
         r.createdBy === userId &&
-        r.itemName
+        (r.itemName
           .toLowerCase()
-          .includes(state.searchText ? state.searchText.toLowerCase() : "")
+          .includes(state.searchText ? state.searchText.toLowerCase() : "") ||
+          r.itemPrice
+            .toString()
+            .includes(state.searchText ? state.searchText : ""))
     )
     .sort(function (a, b) {
       if (state.sortOrder === "desc") {
